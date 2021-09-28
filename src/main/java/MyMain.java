@@ -25,7 +25,7 @@ public class MyMain {
             }
 
         }
-        counter = counter/100.0; // divide by 600 because 60000/100 = 600 because we want percentage not decimal
+        counter = counter/100.0; // divide by 100 because 10000/100 = 100 because we want percentage not decimal
 
         return counter;
     }
@@ -39,6 +39,7 @@ public class MyMain {
         int six_counter = 0;
 
         for (int i = 0; i < 10000; i++) {
+            six_counter = 0;
             for(int j = 0; j < 12; j++){
                 rollDie();
                 if (rollDie() == 6){
@@ -63,6 +64,7 @@ public class MyMain {
         int six_counter = 0;
 
         for (int i = 0; i < 10000; i++) {
+            six_counter = 0;
             for(int j = 0; j < 18; j++){
                 rollDie();
                 if (rollDie() == 6){
